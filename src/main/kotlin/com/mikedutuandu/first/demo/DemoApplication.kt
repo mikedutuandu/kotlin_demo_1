@@ -1,11 +1,12 @@
 package com.mikedutuandu.first.demo
 
-import org.springframework.boot.SpringApplication
 
+import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.runApplication
 
-object DemoApplication {
-	@JvmStatic
-	fun main(args: Array<String>) {
-		SpringApplication.run(DemoApplication::class.java, *args)
-	}
+@SpringBootApplication
+class DemoApplication
+
+fun main(args: Array<String>) {
+	runApplication<DemoApplication>(*args)
 }
